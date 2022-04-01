@@ -69,18 +69,18 @@ function getSideLinks(html) {
 
   // }
   // if (fs.readFileSync(jsonFile) != null) {
-  //   for (let y = 0; y < jsonFile.length; y++) {
+  //   
   //     delete jsonFile[y].Title;
   //     delete jsonFile[y].Link;
 
   //   }
   // }
   if (jsonFile.length > 0) {
-    jsonFile.push({
-     
-    });
+    for (let y = 0; y < jsonFile.length; y++) {
+    jsonFile.push([]);
     let Data = JSON.stringify(jsonFile);
     fs.writeFileSync(fileName," ");
+    }
   }
 
   for (let i = 0; i < headingSidelink.length; i++) {
