@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-cont {
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+hr {
+    border-style: solid;
+    color: darkgrey;
+    padding: 0;
+    margin: 0;
+}
+
+.middle-cont{
+    display: flex
+}
+
+.feature-heading{
+    display: block;
+   
+}
+
+.featured-cont{
+    
+    height: 100vh;
+    width: 75vw;
+    padding-left: 4rem;
+
+}
+.latestStory-cont{
+    background-color: #D1D1D1;
+    height: 100vh;
+    width: 25vw;
+}
