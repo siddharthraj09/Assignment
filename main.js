@@ -60,35 +60,28 @@ function getSideLinks(html) {
   let headerSide = selTool(".latest-stories__item-headline");
 
   const fileName = "details.json";
-  //console.log(topic);
-  // let arr = [];
-  // jsonFile['Title'].remove(Title)
-  // for(let y =0 ;y<jsonFile.length; y++){
-  //   delete jsonFile[y].Title;
-  //  // console.log(element)
 
-  // }
-  // if (fs.readFileSync(jsonFile) != null) {
-  //   
-  //     delete jsonFile[y].Title;
-  //     delete jsonFile[y].Link;
-
-  //   }
-  // }
   if (jsonFile.length > 0) {
     for (let y = 0; y < jsonFile.length; y++) {
-    jsonFile.push([]);
-    let Data = JSON.stringify(jsonFile);
-    fs.writeFileSync(fileName," ");
+    // // jsonFile.push([]);
+    // // let Data = JSON.stringify(jsonFile);
+    // // fs.writeFileSync(fileName,Data);
+    jsonFile.splice(0, jsonFile.length);
+    // delete jsonFile[y].Title
+    // delete jsonFile[y].Link
     }
+    
+  
   }
+
 
   for (let i = 0; i < headingSidelink.length; i++) {
     let anchors = selTool(headingSidelink[i]).find("a");
     let link = selTool(anchors).attr("href");
     let fullLink = "https://time.com" + link;
     //console.log(fullLink);
-    let sideContent = selTool(headerSide[i]).text();
+    let sideContentMain = selTool(headerSide[i]).text();
+    let sideContent=sideContentMain;
 
     //console.log(sideContent)
     writeToJason(fileName, sideContent, fullLink);
