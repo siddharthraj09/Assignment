@@ -21,9 +21,6 @@ function cb(err, response, html) {
   } else {
     // let topicLinks = getTopicLinks(html);
     getSideLinks(html);
-    // console.log(ans)
-    // return ans
-    // conslog(html)
   }
 }
 
