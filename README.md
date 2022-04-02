@@ -26,4 +26,4 @@ To run tests, run the following command
 Use the url
 http://localhost:3000/getTimeStories
 
-On clicking refresh tab latest stories will be printed on html and as well wil be written on "details.json" file
+On clicking refresh tab latest stories will be printed  and as well wil be written on "details.json" file
