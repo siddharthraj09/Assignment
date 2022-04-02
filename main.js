@@ -3,7 +3,6 @@ const cheerio = require("cheerio");
 const jsonFile = require("./details.json");
 const fs = require("fs");
 const featureJson = require("./featured.json");
-const { remove } = require("cheerio/lib/api/manipulation");
 const url = "https://time.com";
 
 
@@ -28,6 +27,7 @@ function cb(err, response, html) {
   }
 }
 
+//!To create JSON for main stories
 //   function getTopicLinks(html) {
 //     let selTool = cheerio.load(html);
 
@@ -53,6 +53,10 @@ function cb(err, response, html) {
 //       }
 //     }
 //   }
+
+
+//!To Create lastest side story content
+
 
 function getSideLinks(html) {
   let selTool = cheerio.load(html);
